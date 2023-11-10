@@ -17,12 +17,12 @@ On the WSL side we will run
   `sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20`
 
 To test it out run `usbipd` you should see something like this:
-![Displaying USBIP in Windows CMD](./usbipd-display.png)
+![Displaying USBIP in Windows CMD](pictures/usbipd-display.png)
 
 #### Working with the MicroBit
 
 First, list devices using `usbip --list` It should look something like this:
-![Running usbipd list](./usbipd_list.png)
+![Running usbipd list](pictures/usbipd_list.png)
 
 See which `busid` your microbit is connected to, mine was listed as `1-7    0d28:0204  USB Mass Storage Device, USB Serial Device (COM3), USB In...`
 
@@ -30,10 +30,10 @@ Using that, now run `usbipd wsl attach --busid <busid>`
 
 
 For reference, this is the command I ran: `usbipd wsl attach --busid 1-7`
-![Attaching via usbipd attach](./usbipd_attach.png)
+![Attaching via usbipd attach](pictures/usbipd_attach.png)
 
 Now go over to your WSL client and run `lsusb`, if your MicroBit is showing up, you did everything correctly!
-![lsusb on wsl side](./lsusb_post_attach.png)
+![lsusb on wsl side](pictures/lsusb_post_attach.png)
 
 My device was labeled as `Bus 001 Device 006: ID 0d28:0204 NXP ARM mbed`
 
