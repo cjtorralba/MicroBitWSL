@@ -47,6 +47,11 @@ If the issue continues, ensure that there are no processes using the MicroBit.
 If issues continue, restart PC and try again.
 
 
+I also used these guides to troubleshoot when I ran into any problems:
+- [Failed to attach device](https://github.com/dorssel/usbipd-win/issues/245)
+- [Attach request failed](https://unix.stackexchange.com/questions/699877/usbip-error-attach-request-for-busid-failed-device-busy-exported)
+- [USBIPD not found for kernel](https://askubuntu.com/questions/1384456/usbipd-not-found-for-kernel-when-using-usb-ip-with-wsl)
+
 
 
 
